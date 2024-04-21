@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import DocReview from './DocReview';
+import './viewdoc.css'
 function ViewDoc() {
     // get the doc id in the path
     const {id}=useParams()
@@ -31,25 +32,29 @@ function ViewDoc() {
 
   return (
     <div className='m-5'>
-        <div className="container bg-ligth shadow-5 rounded-6 "style={{width:'1300px',height:'900px'}}>
-            <Row>
-                <img width={'100px'} height={'500px'}  src="https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=1380&t=st=1704957527~exp=1704958127~hmac=15150e56dd3eb9e54c620efe2029e61f99c04393b71678b7ea2f550f3f513d46" alt="" />
+        <div className="container bg-ligth  ">
+            <Row className=''>
+                <img width={'100px'} height={'600px'}  src="https://cdn.pixabay.com/photo/2017/03/14/03/20/woman-2141808_640.jpg" alt="" />
             </Row>
-            <Row>
-                <Col className='text-center text-dark m-4 p-4'>
-                <h2 className='m-3 text-primary'>{docdetails.hospital}</h2>
-                <h4>{docdetails.name } </h4>
-                <p>{docdetails.specialty}</p>
-                <h4>Phone : {docdetails.phone}</h4>
+            <Row >
+                <Col className='text-center text-dark m-5 p-4'>
+                <h2 style={{textTransform:'uppercase', fontSize:'60px'}} className='mb-5 text-primary '>{docdetails.hospital}</h2>
+                <h4 className='mb-4' style={{textTransform:'uppercase', fontSize:'30px'}}>{docdetails.name } </h4>
+                <p className='fs-4'>{docdetails.specialty}</p>
+                <h3>Phone : {docdetails.phone}</h3>
                 </Col>
                 
                 <Col className=' text-dark m-5 p-3'>
-                <p>Location : {docdetails.address}</p>
+                    <div className='mt-5 ms-3'>
+                    <p>Location : {docdetails.address}</p>
                    <p>Time : {docdetails.available_hours}</p>
                    <p>Email : {docdetails.email}</p>
                    <p>Working Days : {docdetails.available_days}</p>
                    <p>Rating : {docdetails.rating}⭐</p>
                    <p><DocReview review={docdetails.reviews}/></p>
+
+                    </div>
+               
                  
                  
                 </Col>

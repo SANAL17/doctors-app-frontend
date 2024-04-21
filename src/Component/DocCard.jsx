@@ -19,11 +19,11 @@ function DocCard({doctors}) {
       <div className="container">
         
    
-      <MDBCard  className='bg-light text-primary m-5  rounded-6 shadow-5 '>
+      <MDBCard style={{width:'100%', height:'300px'}}  className='bg-light text-primary mb-5  rounded-6 shadow-5 '>
         <MDBCardHeader className='text-center'><h4>{doctors.hospital}</h4></MDBCardHeader>
         
         <MDBCardBody>
-        <MDBCardTitle className='text-center'>{doctors.name}</MDBCardTitle>
+        <MDBCardTitle className='text-center fw-bold'>{doctors.name}</MDBCardTitle>
           <MDBCardText className='text-center '>
           <p>{doctors.specialty}</p>
            <p>⭐{doctors.rating}</p>

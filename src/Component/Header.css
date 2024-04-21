@@ -1,6 +1,17 @@
 .navbar{
-    background-color: rgb(10, 10, 121);
+    background-color: rgb(104, 104, 230);
 }
 .image{
     width: 100px;
+}
+.nav-itmes {
+    padding: 10px;
+    margin-right: 60px;
+}
+.nav-itmes a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 17px;
+    
 }

@@ -1,0 +1,286 @@
+.banner{
+    display: flex;
+    background-color: rgb(104, 104, 230);
+    padding: 50px;
+}
+.banner-text {
+    color: white;
+    padding: 10px;
+
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+.banner-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+.image img{
+    width: 650px;
+    min-width: 300px;
+   margin: 10px 0px 40px 50px;
+}
+.banner-text p{
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.banner-text button{
+     background-color: white;
+     color: blue;
+     padding: 12px 30px;
+     border: none;
+     font-size: 18px;
+     text-transform: uppercase;
+     border-radius: 30px;
+
+     transition: all .55s ease;
+}
+.banner-text button:hover{
+    border-radius: 30px;
+    background-color: transparent;
+    border: solid 2px rgb(255, 255, 255);
+    color: white;
+
+}
+.text-field{
+    background-color: wheat;
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+.booknow button{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin: 25px 0px 15px 0px ;
+
+    transition: all .55s ease;
+    
+}
+.booknow button:hover{
+
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+
+}
+.doctors{
+    background-image: url('https://github.com/prabinmagar/medimoor-hospital-website-design-using-html-css-and-js/blob/master/assets/images/curve-shape-1.png?raw=true');
+    
+    background-repeat: no-repeat;
+}
+@media (max-width:1600px){
+    .banner-text{
+        margin-left: 50px;
+        transition: 2s ;
+    }
+
+}
+@media (max-width:1430px){
+    .banner-text{
+        margin-left: 10px;
+        transition: 2s ;
+    }
+
+}
+@media (max-width:1370px){
+    .banner-text{
+        margin-left: 0px;
+        margin-top: 20px;
+        transition: 2s ;
+    }
+    .image img{
+        width: 500px;
+        transition: 2s ;
+
+
+    }
+
+}
+@media (max-width:1250px){
+    .banner-text{
+        margin-left: 0px;
+        margin-top: 20px;
+        transition: 2s ;
+    }
+    .image img{
+        width: 500px;
+        transition: 2s ;
+
+
+    }
+    .bookking img{
+        width: 550px;
+        transition: 2s;
+
+    }
+
+}
+@media (max-width:1210px){
+    .banner-text{
+        margin-left: 0px;
+        margin-top: 20px;
+        transition: 2s ;
+    }
+    .image img{
+        width: 400px;
+        transition: 2s ;
+
+
+    }
+    .banner-text h1{
+        font-size: 45px;
+        transition: 2s ;
+
+    }
+    .banner-text p{
+       width: 250px;
+        transition: 2s ;
+
+    }
+
+}
+@media (max-width:1170px){
+    .bookking img{
+        width: 450px;
+        transition: 2s;
+
+    }
+
+}
+@media (max-width:995px){
+    .banner{
+        display: inline;
+        background-color: white;
+    }
+    .banner-text h1{
+        color: blue;
+        font-size: 45px;
+        margin-left: 50px;
+        transition: 2s ;
+
+    }
+    .banner-text p{
+        margin-left: 200px;
+
+        color: blue;
+
+        width: 60%;
+        transition: 2s ;
+
+    }
+    .banner-text button{
+        background-color: blue;
+        color: white;
+        margin-left: 50px;
+
+    }
+    .banner-text button:hover{
+        border-radius: 30px;
+        background-color: transparent;
+        border: solid 2px rgb(29, 21, 255);
+        color: blue;
+    
+    }
+    .banner-text{
+        align-items: center;
+        text-align: center;
+    }
+    .image img{
+        align-items: center;
+        text-align: center;
+        margin: 20px 0px 10px 200px;
+        
+    }
+    .bookking{
+        display: inline;
+    }
+    .bookking img{
+        display: none;
+    }
+    .text-field{
+        margin: 5px;
+    }
+    
+
+
+
+}
+@media (max-width:760px){
+    .image img{
+        align-items: center;
+        text-align: center;
+        margin: 20px 0px 10px 100px;
+        
+    }
+
+}
+@media (max-width:715px){
+    
+    .banner-text p{
+        
+         transition: 2s ;
+         width: 50%;
+
+ 
+     }
+     .image img{
+       
+        width: 350px;
+      transition: 2s ;
+
+
+    }
+
+}
+@media (max-width:630px){
+
+    .image img{
+        margin: 20px 0px 10px 50px;
+        transition: 2s;
+    }
+    
+
+
+}
+@media (max-width:585px){
+    .image img{
+        margin: 20px 0px 10px 10px;
+        transition: 2s;
+    }
+    .banner-text p{
+        margin-left: 130px;
+        
+        transition: 2s ;
+        width: 50%;
+
+
+    }
+
+}
+@media (max-width:530px){
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+   
+
+}
+@media (max-width:510px){
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+    .text-field{
+        width: 100%;
+        height: auto;
+
+    }
+}

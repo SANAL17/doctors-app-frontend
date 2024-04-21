@@ -11,7 +11,7 @@ import {
 function Footer() {
   return (
     <div>
-       <MDBFooter style={{backgroundColor:'rgb(10, 10, 121)'}} className=' text-center text-white'>
+       <MDBFooter style={{backgroundColor:'rgb(104, 104, 230)'}} className=' text-center text-white'>
       <MDBContainer className='p-4 pb-0'>
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
